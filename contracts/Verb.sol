@@ -40,8 +40,8 @@ contract Verb is ERC721A, Ownable {
     uint256 constant STARTING_PRICE_DA = 0.3 ether;
     uint256 constant ENDING_PRICE_DA = 0.1 ether;
     uint256 constant PRICE_DECREMENT = 0.04 ether;
-    uint256 constant DECREMENT_INTERVAL = 20 minutes;
-    uint256 constant DUTCH_AUCTION_DURATION = 120 minutes;
+    uint256 constant DECREMENT_INTERVAL = 30 minutes;
+    uint256 constant DUTCH_AUCTION_DURATION = 180 minutes;
     uint256 constant MAX_STEP = 5;
 
     uint256 public LAST_PRICE_DA = STARTING_PRICE_DA;
