@@ -293,7 +293,7 @@ contract Verb is ERC721A, Ownable {
             "EXCEED_DUTCH_MINT_LIMIT"
         );
         uint256 mintPrice = currentDAPrice();
-        require(msg.value == mintPrice * numberOfTokens, "INVALID_AMOUNT");
+        require(msg.value >= mintPrice * numberOfTokens, "INVALID_AMOUNT");
         addressBlockBought[msg.sender] = block.timestamp;
         userPurchase[msg.sender].dutchSpent += msg.value;
         userPurchase[msg.sender].dutchMinted += numberOfTokens;
