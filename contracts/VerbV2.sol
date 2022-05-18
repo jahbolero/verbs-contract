@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "./ERC721A.sol";
 
-contract Verb is ERC721A, Ownable {
+contract VerbV2 is ERC721A, Ownable {
     uint256 public MAX_SUPPLY = 6500;
     uint256 public RESERVE_SUPPLY = 820; // TEAM + MIGRATION REFUND
 
